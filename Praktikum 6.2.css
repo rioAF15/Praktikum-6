@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+#satu{
+    display: flex;
+    flex: 1;
+    /* justify-content: space-around; */
+}
+#dua{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    flex-grow: 1;
+    flex-direction: flex ;
+    align-items: stretch;
+
+}
+#tiga{
+    display: flex;
+    flex: 1;
+}
+#tiga > article{
+    flex: 1;
+    order: 0;
+    
+}
+#satu > nav{
+    flex: 0 0 20vw;
+}
+#satu > nav{
+    background: rgb(187, 55, 7);
+    color: black;
+    order: 0;
+}
+#tiga > aside{
+    background: rgb(12, 235, 235);
+    color: black;
+    order: 1;
+    flex: 0 0 20vw;
+
+}
+header,footer{
+    background: rgb(110, 197, 11);
+    color: black;
+    height: 20vh;
+}
+header,footer,article,nav,aside{
+    padding: 1em;
+}
